@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minyira's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button id="toggleAuth">Login / Sign Up</button>
+
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <section class="hero">
+        <h2 id="typingEffect"></h2>
+        <p>Web Developer | Designer | Creative thinker</p>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="addobe.png" alt="Profile Picture" class="profile-pic">
+            <p>I'm Minyira, a passionate developer creating unique websites and applications. For me , being a software developer is the best thing i could ever be
+            </p>
+            <button class="btn">Download Resume</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <p>i was inspired by one of the software developers , that made me to have a passion also to create my own software</p>
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Personal portfolio website</h3>
+                        <p>A sleek UI and animations project. showcasing my web development skills with interactive features</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>technologoies Used</h3>
+                        <p>- HTML, CSS, JavaScript<br>- Glassmorphism UI<br>- Custom animations & Themes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Virtual eu assistance</h3>
+                        <p>working underway for virtual assitance features stay tuned</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>project features</h3>
+                        <p>Include integrated software for online virtual assitance<br>- stripe Payment Intergration </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-column">
+                <h3>Email</h3>
+                <p>minyiralex3@gmail.com</p>
+            </div>
+            <div class="contact-column">
+                <h3>Phone</h3>
+                <p>+254 793 038 277</p>
+            </div>
+            <div class="contact-column">
+                <h3>Social Media</h3>
+                <p>
+                    <a href="#">Twitter</a> | <a href="#">LinkeIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="gallery">
+        <h2>Project gallery</h2>
+        <div id="galleryContainer" class="gallery-container"></div>
+    </section>
+
+    <section class="events">
+        <h2>Upcoming Events</h2>
+
+        <div class="event-card">
+            <h3>Portfolio Showcase</h3>
+            <p>Date: May 20, 2025</p>
+            <p>Time Left: <span id="countdown"></span></p>
+
+            <form id="eventForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <button type="submit">Register Now!</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="ads">
+        <h2>Sponsored Ads</h2>
+
+        <div class="ad-banner">
+            <a href="https://your-ad-link.com">
+                <img src="images/addobe.png" alt="Ad Space">
+            </a>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <h2>Watch my latest Project</h2>
+        <video width="560" height="315" controls>
+            <source src="images/project-demo.mp4" type="video/mp4">
+            your browser does not support the video tag
+        </video>
+    </section>
+
+    <section class="ai-image">
+        <h2>AI Image Generator</h2>
+        <button id="toggleButton">Show Generator</button>
+
+        <div class="image-container" id="imageContainer" style="display: none;">
+            <form id="imageForm">
+                <input type="text" name="prompt" placeholder="Describe the image you want" required>
+                <button type="submit">Generate Image</button>
+            </form>
+            <div class="image-display">
+                <div id="imageResult"></div>
+            </div>
+        </div>
+    </section>
+
+    <canvas id="bgCanvas">canvas>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</body>
+
+</html>
